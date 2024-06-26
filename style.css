@@ -1,12 +1,28 @@
-body {
-    margin: 30px auto;
-    max-width: 750px;
-    line-height: 1.2;
-    font-size: 20px;
-    color: rgb(41, 41, 37);
-    padding: 0 5px
+	body {
+		background-color: #202020;
+    	margin: 35px auto;
+    	max-width: 750px;
+    	line-height: 1.4;
+    	font-size: 20px;
+    	color: rgb(233, 233, 233); /* font-color */
+		line-break: 
+    	padding: 0 5px
+	}
+		h1,h2,h3 {
+		line-height: 1.2 /* line-height for Headings */
     }
-
-    h1,h2,h3 {
-    line-height: 1.0
+	a:link {
+  	color: rgb(0, 113, 128);
+ 	 background-color: transparent;
+ 	 text-decoration: none;
+	}
+	a:visited {
+ 	color: rgb(0, 89, 255);
+ 	background-color: transparent;
+  	text-decoration: none;
+	}
+	a:hover {
+  	color: rgb(0, 162, 255);
+  	background-color: transparent;
+  	text-decoration: underline;
 }
