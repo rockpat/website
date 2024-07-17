@@ -1,18 +1,25 @@
-	body {
-		background-color: #202020;
-    	margin: 35px auto;
-    	max-width: 750px;
-    	line-height: 1.4;
-    	font-size: 20px;
-    	color: rgb(233, 233, 233); /* font-color */
-		line-break: 
-    	padding: 0 5px
-	}
-		h1,h2,h3 {
-		line-height: 1.2 /* line-height for Headings */
-    }
+body {
+	background-color: #202020;
+    margin: 35px auto; 
+	word-wrap: break-word;
+	width: 750px;
+	line-height: 1.4;
+    font-size: 20px;
+    color: rgb(233, 233, 233); /* font-color */
+	line-break: 
+   	padding: 0 5px
+}
+
+a {
+	cursor: pointer;
+}
+
+h1,h2,h3 {
+	line-height: 1.2 /* line-height for Headings */
+}
+
 	a:link {
-  	color: rgb(0, 113, 128);
+  	color: rgb(0, 140, 255);
  	 background-color: transparent;
  	 text-decoration: none;
 	}
@@ -22,7 +29,64 @@
   	text-decoration: none;
 	}
 	a:hover {
-  	color: rgb(0, 162, 255);
+  	color: rgb(72, 173, 255);
   	background-color: transparent;
   	text-decoration: underline;
+	}
+
+.header {
+	max-width: 1080px;
+	height: 80px;
+	background-color: #181818;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header-logo {
+	height: 100%;
+	align-items: start;
+}
+
+.header-logo img {
+	height: 40px;
+}
+
+.header-nav {
+	display: flex;
+	width: fit-content;
+	height: 100%;
+	/*background-color: rgb(255, 251, 6);*/
+}
+
+.header-social {
+	width: 120px;
+	height: 100%;
+	background-color: rgb(255, 0, 0);
+	display: flex;
+	align-items: center;
+}
+
+.header-social-yt {
+	width: 50px;
+	height: 50px;
+	background-image: url(../content/images/Icon-90x90-Social-YouTube.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-nav ul {
+	list-style: none;
+	margin-left: 30px;
+}
+
+.header-nav ul li {
+	display: inline;
+	float: left;
+}
+
+.header-nav ul li a {
+	padding: 0 10px;
+	line-height: 40px;
 }
