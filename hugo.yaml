@@ -1,0 +1,44 @@
+baseURL: https://jakubwieloch.com/
+languageCode: de-de
+title: Jakub's Website
+theme: ["PaperMod"]
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 10
+    - identifier: produkt
+      name: Produkt
+      url: /product/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  ShowPostNavLinks: true
+
+  searchHidden: false
+  defaultTheme: auto #dark
+
+  homeInfoParams:
+    Title: Ich bin Jakub :-)
+    Content: Ich bin ein 14 Jähriger Junge, aus Deutschland's schönem Wuppertal, der oft an seinem Computer herum frickelt, egal ob Linux, Windows oder MacOS aber trotzdem bin ich die meiste Zeit in Linux.
+  socialIcons:
+        - name: youtube
+          url: "https://www.youtube.com/@rockpat"
+        - name: github
+          url: "https://www.github.com/rockpat"
+        - name: twitter
+          url: "https://twitter.com/rockpatyt"
+        - name: rss
+          url: "/feed"
