@@ -6,6 +6,14 @@
     <description>Recent content on Jakub&#39;s Website</description>
     <generator>Hugo -- 0.128.2</generator>
     <language>de-de</language>
+    <lastBuildDate>Fri, 02 Aug 2024 11:02:22 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mein Produkt / Service</title>
+      <link>http://localhost:1313/product/</link>
+      <pubDate>Fri, 02 Aug 2024 11:02:22 +0200</pubDate>
+      <guid>http://localhost:1313/product/</guid>
+      <description>COMING SOON™ </description>
+    </item>
   </channel>
 </rss>

@@ -2,3 +2,34 @@ baseURL: https://jakubwieloch.com/
 languageCode: de-de
 title: Jakub's Website
 theme: ["PaperMod"]
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 10
+    - identifier: produkt
+      name: Produkt
+      url: /product/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
+params:
+  ShowPostNavLinks: true
+
+  homeInfoParams:
+    Title: Test
+    Content: :-)
+  socialIcons:
+        - name: youtube
+          url: "https://www.youtube.com/@rockpat"
+        - name: github
+          url: "https://www.github.com/rockpat"
+        - name: twitter
+          url: "https://twitter.com/rockpatyt"
+        - name: rss
+          url: "/feed"
