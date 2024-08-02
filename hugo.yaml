@@ -18,12 +18,21 @@ menu:
       url: /tags/
       weight: 30
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   ShowPostNavLinks: true
 
+  searchHidden: false
+  defaultTheme: auto #dark
+
   homeInfoParams:
-    Title: Test
-    Content: :-)
+    Title: Ich bin Jakub :-)
+    Content: Ich bin ein 14 Jähriger Junge, aus Deutschland's schönem Wuppertal, der oft an seinem Computer herum frickelt, egal ob Linux, Windows oder MacOS aber trotzdem bin ich die meiste Zeit in Linux.
   socialIcons:
         - name: youtube
           url: "https://www.youtube.com/@rockpat"
