@@ -1,6 +1,6 @@
 baseURL: https://jakubwieloch.com/
 languageCode: de-de
-title: Jakub's Website
+title: Jakub Wieloch
 theme: ["PaperMod"]
 
 menu:
@@ -18,14 +18,8 @@ menu:
       url: /tags/
       weight: 30
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
 params:
-  ShowPostNavLinks: true
+  ShowPostNavLinks: true # Adds a Previous / Next post suggestion under a single post
 
   searchHidden: false
   defaultTheme: auto #dark
