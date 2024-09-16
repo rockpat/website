@@ -1,7 +1,11 @@
 +++
-title = 'Mein Produkt / Service'
-date = 2024-08-02T11:02:22+02:00
+title = 'Product'
+date = 2024-08-04T21:37:43+02:00
 draft = false
 +++
 
-# COMING SOON™
+# Testing
+
+Just testing...
+
+##  COMING SOON™
