@@ -11,6 +11,6 @@ If you say I should just use 'hugo' instead of 'hugo server', then you're wrong.
 
 What I use: OS = Debian Testing (Linux), Hosting = Cloudflare pages & Hugo version v0.131.0+extended debian package
 
-If you even just have an indicator for what the problem could be besides like really obvious shit like setting the baseURL or just running the hugo command, the please open an issue. 
+If you even just have an indicator for what the problem could be besides like really obvious shit like setting the baseURL or just running the hugo command, then please open an issue. 
 
 Have a great day :-)
