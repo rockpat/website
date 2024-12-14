@@ -9,7 +9,7 @@ menu:
       name: Blog
       url: /blog/
       weight: 10
-    - identifier: produkt
+    - identifier: product
       name: Produkt
       url: /product/
       weight: 20

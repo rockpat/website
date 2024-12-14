@@ -1,6 +1,6 @@
 +++
 title = 'Willkommen auf meiner Website!'
-date = 2024-08-02T14:37:09+02:00
+date = 2024-12-14T11:08:53+01:00
 draft = false
 +++
 # Schön guten Tag!
