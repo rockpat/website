@@ -1,7 +1,7 @@
 baseURL: https://jakubwieloch.com/
 languageCode: de-de
 title: Jakub Wieloch
-theme: ["PaperMod"]
+theme: "PaperMod"
 
 menu:
   main:
