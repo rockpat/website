@@ -20,19 +20,19 @@ My Website, for the longest time in existense had issues, one of them game break
 
 This was quoted from my old README.md here. You might ask how long did this problem stuck around? **8 fucking Months.**
 
-I've fixed it today (as of writing), the 10.03.2025.
+**I've fixed it today (as of writing), the 10.03.2025.**
 
 Then you might ask me how did I fix it, especially after SUCH a long time.
 
-I don't know, exactly.
+*I don't know, exactly.*
 
 But it was very likely it were a fuck ton of small over sights that ended in a disaster.
 
-If you're experiencing the exact same problem, I'll write a blog post about it.
+**If you're experiencing the exact same problem, I'll write a blog post about it.**
 
 **TL;DR: Solution**
 - Check your Cloudflare deployment & build setting/flags!
-- If pages of your website are missing: use `_index.md` instead of `index.md` and read (this!](https://gohugo.io/content-management/page-bundles/)
+- If pages of your website are missing: use `_index.md` instead of `index.md` and [read this!](https://gohugo.io/content-management/page-bundles/)
 - Question everything... 
 
 ### Creating your own Website ;-)
