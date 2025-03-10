@@ -1,4 +1,4 @@
-## jakubwieloch.com
+## JAKUBWIELOCH.COM
 
 The one and only Github Repository for my Website (jakubwieloch.com).
 
