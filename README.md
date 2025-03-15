@@ -18,7 +18,8 @@ My Website, for the longest time in existense had issues, one of them game break
 >
 > If you even just have an indicator for what the problem could be besides like really obvious shit like setting the baseURL or just running the hugo command, then please open an issue. 
 
-This was quoted from my old README.md here. You might ask how long did this problem stuck around? **8 fucking Months.**
+This was quoted from my old README.md here. You might ask how long did this problem stuck around? 
+**8 fucking Months.**
 
 **I've fixed it today (as of writing), the 10.03.2025.**
 
@@ -34,6 +35,13 @@ But it was very likely it were a fuck ton of small over sights that ended in a d
 - Check your Cloudflare deployment & build setting/flags!
 - If pages of your website are missing: use `_index.md` instead of `index.md` and [read this!](https://gohugo.io/content-management/page-bundles/)
 - Question everything... 
+
+### How to install?
+
+```
+git clone https://github.com/rockpat/website.git ~/Github/website
+git submodule update --init --recursive # needed to also clone PaperMod
+```
 
 ### Creating your own Website ;-)
 

@@ -23,10 +23,11 @@ params:
 
   searchHidden: false
   defaultTheme: auto #dark
+  ShowToc: true
 
   homeInfoParams:
     Title: Ich bin Jakub :-)
-    Content: Ich bin ein 15 Jähriger Junge, aus Deutschlands schönem Wuppertal, der oft an seinem Computer herum frickelt, egal ob Linux, Windows oder MacOS aber trotzdem bin ich die meiste Zeit in Linux.
+    Content: Ich bin ein 15 Jähriger Junge, aus Deutschlands schönem Wuppertal, der oft an Computern herum frickelt, egal ob Linux, Windows, MacOS oder andere Betriebssysteme aber trotzdem bin ich die meiste Zeit in Linux.
   socialIcons:
         - name: youtube
           url: "https://www.youtube.com/@rockpat"
