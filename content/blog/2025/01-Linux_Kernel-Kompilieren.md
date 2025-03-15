@@ -1,24 +1,25 @@
 +++
 title = 'Wie kompiliert man den Linux Kernel?'
 date = 2025-03-10T20:21:34+01:00
+tags = ['Linux']
 draft = true
 +++
 
-**Warum (Vorteil)**  
+**Warum?** 
 Bessere Performance, Mehr Optionen & Controlle.
 
 **Download & Extrahieren**  
 Download (Kernel + Signatur), Decompress, Extrahieren (Tar) (erklärung)  
-`unxz linux-*.tar.xz [xz --decompress]`
+`unxz linux-*.tar.xz`
 
-Signatur/Echtheit checken 
+Signatur/Echtheit checken
 `gpg2 --locate-keys torvalds@kernel.org gregkh@kernel.org`  
 `gpg2 --verify linux-*.tar.sign`
 
 Extrahieren (Tar)  
 `tar -xf linux-*.tar`
 
-**.Config file**
+**.config file**
 
 `cd linux-*/`  
 `sudo cp /boot/config-"$(uname -r)" .config`
@@ -54,14 +55,16 @@ tee log = Log file
 `sudo make headers_install`
 
 **DKMS \[Nvidia\]: Arch Wiki**  
-`sudo dkms autoinstall -k`
+`sudo dkms autoinstall -k` z.B. `sudo dkms autoinstall -k 6.12.18-Jakub`
+
 
 `sudo make install`
+Reboot in den neuen Kernel.
 
-Reboot in den neuen Kernel.  
 **Aufräumen: "make"** clean, mrproper oder distclean
 
-**Deinstallation**  
+**Deinstallation**
+
 Entfernt kernel modules  
 `sudo rm -rf /lib/modules/<kernel_version>`  
 (Entfernt device-tree binaries)  
