@@ -19,7 +19,7 @@ Egal welcher Grund es ist, hier hast du eine Anleitung wie du den Linux Kernel k
 
 **Als aller erstes musst du dein System und dich selbst vorbereiten.** 
 
-Für dein System musst du einfach essentiale Bibliotheken (Libaries) und Programme installieren, wie genau diese heißen variiert jenach auch welcher Distribution du ihn Kompilierst. Für dich, einmal Tief ein atmen, ein bisschen geduld (am meisten bei schwacher Hardware) und bisschem mehr Zeit als du dir vorstellst. Btw, dieses Tutorial gilt am meisten für Debian (Testing), alles andere hat noch mal einen größeren Spielraum. ;-)
+Für dein System musst du einfach essentiale Bibliotheken (Libaries) und Programme installieren, wie genau diese heißen variiert jenach auf welcher Distribution du ihn Kompilierst. Für dich, einmal Tief ein atmen, ein bisschen geduld (am meisten bei schwacher Hardware) und bisschem mehr Zeit als du dir vorstellst. Btw, dieses Tutorial gilt am meisten für Debian (Testing), alles andere hat noch mal ein größeren Spielraum. ;-)
 
 ```
 # Debian und darauf basierenten Distrobution (z.B. Ubuntu & Linux Mint)
@@ -50,24 +50,48 @@ Den Quellcode bekommst von der [kernel.org](https://kernel.org/) Webseite. ;-)
 
 ![](/images/2025/Linux-Kernel-Website.png)
 
-In meinem fall habe ich mir den neuesten Longterm Kernel gedownloaded (6.12.19, in meinem fall), weil die Nvidia Treibern aktuell von Debians Repositorien (Stable & Testing) nicht mit 6.13.x kooperieren wollen! Meistens kann du einfach den Neuesten Mainline Kernel 
+In meinem fall habe ich mir den neuesten Longterm Kernel gedownloaded (6.12.19, in meinem fall), weil die Nvidia Treibern aktuell von Debians Repositorien (Stable & Testing) nicht mit 6.13.x kooperieren wollen! Meistens kannst du einfach den **Neuesten Mainline Kernel** (Der in dem Großen Gelben Button!) nutzen außer du weißt er funktioniert mit deiner aktuellen Konfiguration an Software nicht!
 
-Download (Kernel + Signatur), Decompress, Extrahieren (Tar) (erklärung)  
-`unxz linux-*.tar.xz`
+Als nächstes musst du den Kernel Dekompremieren (mit XZ).
+```sh
+unxz linux-*.tar.xz
+```
 
-Signatur/Echtheit checken
-`gpg2 --locate-keys torvalds@kernel.org gregkh@kernel.org` 
-`gpg2 --verify linux-*.tar.sign`
+Danach ist es gut die Echtheit deines Kernels zu checken, aber um sie nach zu weißen brauchst du noch die Signatur deines Kernels.
 
-Extrahieren (Tar)  
-`tar -xf linux-*.tar`
+```sh
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.19.tar.sign
+```
+
+*btw, du musst den Link anpassen an deine Kernel Version!* Danach kannst du fortfahren mit der Verifizierung. (Btw, evtl. musst du `gpg2` oder `gpg` installieren!)
+
+```
+gpg2 --locate-keys torvalds@kernel.org gregkh@kernel.org 
+gpg2 --verify linux-*.tar.sign
+```
+
+Wenn du diese Nachricht siehst, dann ist die Signatur gut. (Auch wenn diese Warnung darunter steht!)
+
+Jetzt musst deinen Kernel Extrahieren.
+
+```sh
+tar -xf linux-*.tar`
+```
+
+Als letztes für diesen Schritt muss du noch in den Ordner deines Kernels gehen.
+```sh
+cd linux-*/
+```  
 
 ### Optimieren des Linux Kernels (für dein System)
 
+
 **.config file**
 
-`cd linux-*/`  
-`sudo cp /boot/config-"$(uname -r)" .config`
+
+```sh
+sudo cp /boot/config-"$(uname -r)" .config
+```
 
 `make olddefconfig` \*Aktualisiert die alte Kofigurationsdate  
 `make defconfig` \*Erstell eine neue mit Standart einstellungen
@@ -81,7 +105,7 @@ Früher war es mal so: (pre ~6.5.x)
 
 `make menuconfig` \*Menü zum konfiguren des Kernels
 
-**Kernel benennen** \*Damit sich Kernels nicht in Konflikt kommen  
+**Kernel (Um)benennen.** \*Damit sich Kernels nicht in Konflikt kommen  
 `./scripts/config --file .config --set-str LOCALVERSION "-Jakub"`
 
 **Das Kompilieren**  
@@ -107,11 +131,18 @@ tee log = Log file
 
 ### DKMS (Nvidia & ZFS Nutzer!)
 
-"Dynamic Kernel Modules"
+"**D**ynamic **K**ernel **M**odule**s**", sind wie der Name frei gibt, "Dynamische" Kernel Module die außerhalb des Kernel eingebunden werden können. Die bekannteste anwendung für DKMS sind die Nvidia Treiber. **Wenn du eine Nvidia Grafikkarte hast und die Treiber von ihr installiert hast und die DKMS nicht baust, dann wir dein Kernel nicht Funktionieren!**
 
-`sudo dkms autoinstall -k` z.B. `sudo dkms autoinstall -k 6.12.19-Jakub`
+```sh
+sudo dkms autoinstall -k #Kernel-version+Name
+``` 
+in Praktischer nutzung würde es so Aussehen.
 
-Für mehr info lies dir die [DKMS Archwiki](https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support) Artikel durch!
+```sh
+sudo dkms autoinstall -k 6.12.19-Jakub
+```
+
+**Für mehr info lies dir die [DKMS Archwiki](https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support) Artikel durch!**
 
 `sudo make install`
 Reboot in den neuen Kernel.
@@ -119,7 +150,7 @@ Reboot in den neuen Kernel.
 
 ### Deinstallation
 
-**Aufräumen: "make"** clean, mrproper oder distclean
+Wenn du dein selbst Kompilierten Kernel entfernen willst, nutzt folgene Kommands.
 
 **Entfernt Kernel modules**
 
