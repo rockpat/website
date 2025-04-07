@@ -85,6 +85,8 @@ cd linux-*/
 
 ### Optimieren des Linux Kernels (für dein System)
 
+[Mental Outlaws Tutorial](https://www.youtube.com/watch?v=NVWVHiLx1sU)
+[Denshis Tutorial](https://www.youtube.com/watch?v=APQY0wUbBow)
 
 **.config file**
 
@@ -103,7 +105,11 @@ Früher war es mal so: (pre ~6.5.x)
 > `$ scripts/config --disable SYSTEM_TRUSTED_KEYS`  
 > `$ scripts/config --disable SYSTEM_REVOCATION_KEYS`
 
-`make menuconfig` \*Menü zum konfiguren des Kernels
+Menü zum konfiguren des Kernels
+
+```sh
+make menuconfig
+```
 
 **Kernel (Um)benennen.** \*Damit sich Kernels nicht in Konflikt kommen  
 `./scripts/config --file .config --set-str LOCALVERSION "-Jakub"`
@@ -112,9 +118,9 @@ Früher war es mal so: (pre ~6.5.x)
 `make -j$(nproc) 2>&1 | tee log`
 
 \-j = wieviele Kompilier jobs gleichzeitig laufen können.  
-nproc = Gibt an Wieviele jobs zuverfügung stehen.  
-Also "-j$(nproc)" bedeutet: also „nutz so viele parallele Kompilierungsjobs, wie viele CPU-Threads ich habe“.  
-tee log = Log file
+$(nproc) = Gibt an Wieviele jobs zuverfügung stehen.  
+Also "-j$(nproc)" bedeutet: nutz so viele CPU-Threads, wie viele CPU-Threads ich habe.
+tee log = Erstellt ein Log file
 
 ### DTBs (Device Tree Binaries)
 
@@ -134,7 +140,7 @@ tee log = Log file
 "**D**ynamic **K**ernel **M**odule**s**", sind wie der Name frei gibt, "Dynamische" Kernel Module die außerhalb des Kernel eingebunden werden können. Die bekannteste anwendung für DKMS sind die Nvidia Treiber. **Wenn du eine Nvidia Grafikkarte hast und die Treiber von ihr installiert hast und die DKMS nicht baust, dann wir dein Kernel nicht Funktionieren!**
 
 ```sh
-sudo dkms autoinstall -k #Kernel-version+Name
+sudo dkms autoinstall -k #VERSION+NAME
 ``` 
 in Praktischer nutzung würde es so Aussehen.
 

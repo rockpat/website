@@ -18,6 +18,8 @@ menu:
       url: /tags/
       weight: 30
 
+enableRobotsTXT: true
+
 params:
   ShowPostNavLinks: true # Adds a Previous / Next post suggestion under a single post
 
