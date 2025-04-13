@@ -25,6 +25,9 @@ params:
 
   searchHidden: false
   defaultTheme: auto #dark
+  #ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
   ShowToc: true
 
   homeInfoParams:
