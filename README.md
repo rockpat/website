@@ -38,7 +38,7 @@ But it was very likely it were a fuck ton of small over sights that ended in a d
 
 ### How to install?
 
-```
+```sh
 git clone https://github.com/rockpat/website.git ~/Github/website
 git submodule update --init --recursive # needed to also clone PaperMod
 ```
