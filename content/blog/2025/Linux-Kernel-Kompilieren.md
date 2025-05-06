@@ -157,6 +157,8 @@ Also `-j$(nproc)` bedeutet: nutz so viele CPU-Threads, wie viele CPU-Threads ich
 
 **Nur für ARM & RISC-V, also bei x86-64 Komputern kann man diesen Teil skippen!**  
 
+Wenn du auf einem Computer bist, mit einer ARM oder RISC-V architektur, dann lies dir den Teil vom [IT'SFOSS](https://itsfoss.com/compile-linux-kernel/#installing-dtbs-only-for-arm-and-risc-v) guide durch.
+
 (Nicht im video!)
 
 
