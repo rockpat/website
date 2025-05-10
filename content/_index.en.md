@@ -5,4 +5,4 @@ draft = false
 +++
 # Hello there!
 
-![Jakub](./Jakub.jpg)
+![Jakub](../Jakub.jpg)
