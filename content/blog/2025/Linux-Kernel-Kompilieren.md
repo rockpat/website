@@ -1,9 +1,9 @@
 ---
 title: "Wie kompiliert man den Linux Kernel?"
-date: 2025-04-23
+date: 2025-05-10
 image: images/2025-thumbs/Kernel.png
 tags: ['Linux']
-draft: true
+draft: false 
 ---
 
 ![](/images/2025-thumbs/Kernel.webp)
@@ -164,9 +164,15 @@ Wenn du auf einem Computer bist, mit einer ARM oder RISC-V architektur, dann lie
 
 ### Weiteres Kompilieren
 
-`make bzImage`  
-`sudo make modules_install -j$(nproc)`  
-`sudo make headers_install`
+```sh
+make bzImage
+```  
+```sh
+sudo make modules_install -j$(nproc)
+```
+```sh
+sudo make headers_install
+```
 
 ### DKMS (Nvidia & ZFS Nutzer!)
 
@@ -222,4 +228,4 @@ Meine eigene Erfahrung ;-)
 
 ## Video
 
-{{< youtube "aIJaxy4r_uA" >}}
+{{< youtube "RUDDGTUs1tk" >}}
