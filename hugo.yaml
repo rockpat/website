@@ -3,8 +3,6 @@ languageCode: de-de
 title: Jakub Wieloch
 theme: 'PaperMod'
 
-
-
 enableRobotsTXT: true
 enableEmoji: true
 
@@ -22,7 +20,7 @@ languages:
         weight: 10
       - identifier: produkt
         name: Produkt
-        url: /product/
+        url: /produkt/
         weight: 20
       - identifier: tags
         name: Tags
@@ -49,7 +47,7 @@ languages:
     params:
       homeInfoParams:
         Title: I'm Jakub :-)
-        Content: I'm a 15-year-old from Germany's beautiful Wuppertal who often tinkers with computers, whether it's Linux, Windows, MacOS, or other operating systems, but I spend most of my time on Linux. To get to the [Legal](impressum) or [Technology I use in everyday life](uses), click here!    
+        Content: I'm a 15-year-old from Germany's beautiful Wuppertal who often tinkers with computers, whether it's Linux, Windows, MacOS, or other operating systems, but I spend most of my time on Linux. To get to the [Legal](../impressum) or [Technology I use in everyday life](uses), click here!    
 
       socialIcons:
         - name: youtube

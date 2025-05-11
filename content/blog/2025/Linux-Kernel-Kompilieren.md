@@ -113,7 +113,7 @@ sudo cp /boot/config-"$(uname -r)" .config
 Damit du jetzt deinen Kernel Optimieren kannst, kannst du mit diesen Kommands **entweder** deine grad eben Kopierte `.config` aktualisieren oder einfach eine Komplett neue erstellen.
 
 ```sh
-# Aktualisiert die alte Kofigurationsdate
+# Aktualisiert die alte Konfigurationsdate
 make olddefconfig
 
 # Erstell eine neue .config mit standart Einstellungen
@@ -133,7 +133,7 @@ Menü zum konfiguren des Kernels
 make menuconfig
 ```
 
-Außerdem wenn genauere Video's über die Konfiguration und Optimierung des Linux Kernels sehen willst, sind hier 3 Gute Videos, natürlich auf Englisch für dich ;-) 
+Außerdem wenn du (genauere) Video's über die Konfiguration und Optimierung des Linux Kernels sehen willst, sind hier 3 Gute Videos, natürlich auf Englisch für dich ;-)
 
 [Mental Outlaws Tutorial](https://www.youtube.com/watch?v=NVWVHiLx1sU) [Denshis Tutorial](https://www.youtube.com/watch?v=APQY0wUbBow) [DJ Wares Tutorial](https://www.youtube.com/watch?v=s95hjvFAE5g)
 
@@ -143,12 +143,12 @@ Außerdem wenn genauere Video's über die Konfiguration und Optimierung des Linu
 
 Btw, du kannst gerne einfach deinen Namen/Username nutzten, deine Vorstellung ist hier das Limit, grundsätzlich. "-MrBean" 
 
-**Das Kompilieren**  
+### Das Kompilieren 
 ```sh
 make -j$(nproc) 2>&1 | tee log
 ```
 
-`\-j` = wieviele Kompilier jobs gleichzeitig laufen können.  
+`-j` = wieviele Kompilier jobs gleichzeitig laufen können.  
 `$(nproc)` = Gibt an Wieviele jobs zuverfügung stehen.  
 Also `-j$(nproc)` bedeutet: nutz so viele CPU-Threads, wie viele CPU-Threads ich habe.
 `tee log` = Erstellt eine Log-Datei
@@ -157,7 +157,7 @@ Also `-j$(nproc)` bedeutet: nutz so viele CPU-Threads, wie viele CPU-Threads ich
 
 **Nur für ARM & RISC-V, also bei x86-64 Komputern kann man diesen Teil skippen!**  
 
-Wenn du auf einem Computer bist, mit einer ARM oder RISC-V architektur, dann lies dir den Teil vom [IT'SFOSS](https://itsfoss.com/compile-linux-kernel/#installing-dtbs-only-for-arm-and-risc-v) guide durch.
+Wenn du auf einem Computer bist, mit einer ARM oder RISC-V Architektur, dann lies dir den Teil vom [IT'SFOSS](https://itsfoss.com/compile-linux-kernel/#installing-dtbs-only-for-arm-and-risc-v) guide durch.
 
 (Nicht im video!)
 
@@ -192,7 +192,7 @@ sudo dkms autoinstall -k 6.14.3-Jakub
 ```sh
 sudo make install
 ```
-Reboot in deinen neuen Kernel. ;-)
+Jetzt kannst du in deinen neuen Kernel Neustarten, viel Glück! ;-)
 
 
 ### Deinstallation
@@ -220,10 +220,9 @@ sudo update-grub # oder sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Quellen
-[It's Foss Guide: How to compile the Linux Kernel (6.5.5)](https://itsfoss.com/compile-linux-kernel/) (In Englisch)
+- [It's Foss Guide: How to compile the Linux Kernel (Kernel 6.5.5)](https://itsfoss.com/compile-linux-kernel/) [Englisch]
 
-
-Meine eigene Erfahrung ;-)
+- Meine eigene Erfahrung ;-)
 
 
 ## Video
