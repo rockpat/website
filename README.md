@@ -7,6 +7,10 @@ The one and only Github Repository for my Website (jakubwieloch.com).
 
 I'm using [Hugo](https://github.com/gohugoio/hugo), as my static site generator of choice, [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod) as my theme and I'm deploying my Website to Cloudflare (Pages). :-)
 
+### Contributing :-)
+
+You're more then welcome to contribute stuff like typos, grammar fixes but also to suggest how I can implement stuff, better.
+
 ### History :-/
 
 My Website, for the longest time in existense had issues, one of them game breaking...
@@ -21,7 +25,7 @@ My Website, for the longest time in existense had issues, one of them game break
 This was quoted from my old README.md here. You might ask how long did this problem stuck around? 
 **8 fucking Months.**
 
-**I've fixed it today (as of writing), the 10.03.2025.**
+**I've fixed it on the 10th of March 2025.**
 
 Then you might ask me how did I fix it, especially after SUCH a long time.
 
