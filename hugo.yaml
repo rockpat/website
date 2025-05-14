@@ -20,7 +20,7 @@ languages:
         weight: 10
       - identifier: produkt
         name: Produkt
-        url: /produkt/
+        url: /product/
         weight: 20
       - identifier: tags
         name: Tags
