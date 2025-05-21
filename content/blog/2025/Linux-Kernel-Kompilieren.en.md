@@ -178,7 +178,7 @@ sudo make headers_install
 
 ### DKMS (Nvidia & ZFS Users!)
 
-"D**ynamic Kernel Modules," as the name suggests, are "dynamic" kernel modules that can be integrated outside of the kernel. The most well-known application for DKMS is Nvidia drivers. **If you have an Nvidia graphics card and have installed its drivers, and don't build DKMS, your kernel won't work!**
+"**D**ynamic **K**ernel **M**odule**s**," as the name suggests, are "dynamic" kernel modules that can be integrated outside of the kernel. The most well-known application for DKMS is Nvidia drivers. **If you have an Nvidia graphics card and have installed its drivers, and don't build DKMS, your kernel won't work!**
 
 ```sh
 sudo dkms autoinstall -k #VERSION-NAME
@@ -223,11 +223,11 @@ sudo update-grub # or sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Sources
-- [It's Foss Guide: How to compile the Linux Kernel (Kernel 6.5.5)](https://itsfoss.com/compile-linux-kernel/) [English]
+- [It's Foss Guide: How to compile the Linux Kernel (Kernel 6.5.5)](https://itsfoss.com/compile-linux-kernel/)
 
 - My own experience ;-)
 
 
 ## Video
 
-{{< youtube "RUDDGTUs1tk" >}}
+{{< youtube "wuZtGHsjUVs" >}}
