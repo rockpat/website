@@ -61,12 +61,10 @@ languages:
 
 params:
   ShowPostNavLinks: true # Adds a Previous / Next post suggestion under a single post
-
   searchHidden: false
   defaultTheme: auto #dark
   #ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowPostNavLinks: true
   ShowToc: true
 
   homeInfoParams:
