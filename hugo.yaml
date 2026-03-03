@@ -47,7 +47,7 @@ languages:
     params:
       homeInfoParams:
         Title: I'm Jakub :-)
-        Content: I'm a 15-year-old from Germany's beautiful Wuppertal who often tinkers with computers, whether it's Linux, Windows, MacOS, or other operating systems, but I spend most of my time on Linux. To get to the [Legal](../impressum) or [Technology I use in everyday life](uses), click here!    
+        Content: I'm a 16-year-old from Germany's beautiful Wuppertal who often tinkers with computers, whether it's Linux, Windows, MacOS, or other operating systems, but I spend most of my time on Linux. To get to the [Legal](../impressum) or [Technology I use in everyday life](uses), click here!    
 
       socialIcons:
         - name: youtube
@@ -69,7 +69,7 @@ params:
 
   homeInfoParams:
     Title: Ich bin Jakub :-)
-    Content: Ich bin ein 15 Jähriger Junge, aus Deutschlands schönem Wuppertal, der oft an Computern herum frickelt, egal ob Linux, Windows, MacOS oder andere Betriebssysteme aber trotzdem bin ich die meiste Zeit in Linux. Zum [Impressum](impressum) oder [Technik die ich im Alltag nutze](uses) kommst du hier hin!
+    Content: Ich bin ein 16 jähriger Junge, aus Deutschlands schönem Wuppertal, der oft an Computern herum frickelt, egal ob Linux, Windows, MacOS oder andere Betriebssysteme aber trotzdem bin ich die meiste Zeit in Linux. Zum [Impressum](impressum) oder [Technik die ich im Alltag nutze](uses) kommst du hier hin!
 
   socialIcons:
       - name: youtube

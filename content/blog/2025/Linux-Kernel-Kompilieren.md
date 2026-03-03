@@ -1,9 +1,10 @@
 ---
 title: "Wie kompiliert man den Linux Kernel?"
 date: 2025-05-10
-image: images/2025-thumbs/Kernel.png
 tags: ['Linux']
 draft: false 
+image:
+    - "/images/2025-thumbs/Kernel.webp"
 ---
 
 ![](/images/2025-thumbs/Kernel.webp)
