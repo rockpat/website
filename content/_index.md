@@ -5,4 +5,4 @@ draft = false
 +++
 # Schön guten Tag!
 
-![Jakub](./Jakub.webp)
+![Jakub](./jakub.webp)
