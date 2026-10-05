@@ -1,13 +1,11 @@
 ---
 title: "Wie kompiliert man den Linux Kernel?"
 date: 2025-05-10
+cover:
+    image: images/2025-thumbs/Kernel.webp
 tags: ['Linux']
 draft: false 
-image:
-    - "/images/2025-thumbs/Kernel.webp"
 ---
-
-![](/images/2025-thumbs/Kernel.webp)
 
 ## Warum?
 
@@ -53,7 +51,7 @@ Btw, du brauchst nicht starke Hardware, das Kompilieren geht aber schneller auf 
 Um den Linux Kernel zu Kompilieren brauchst du seinen Quellcode (btw, das gilt für alles was du kompilieren willst).
 Den Quellcode bekommst von der [kernel.org](https://kernel.org/) Webseite. ;-)
 
-![](/images/2025/Linux-Kernels-Website.png)
+![](/images/2025/Linux-Kernels-Website.webp)
 
 Du kannst einfach den **Neuesten Mainline Kernel**, der immer im großen **Gelben Button** ist downloaden!
 

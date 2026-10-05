@@ -1,12 +1,11 @@
 ---
 title: "How to compile the Linux kernel?"
 date: 2025-05-11
-image: images/2025-thumbs/Kernel.png
+cover:
+    image: images/2025-thumbs/Kernel.webp
 tags: ['Linux']
-draft: false 
+draft: false
 ---
-
-![](/images/2025-thumbs/Kernel.webp)
 
 ## Why?
 
@@ -52,7 +51,7 @@ By the way, you don't need powerful hardware, but compiling times are faster on 
 To compile the Linux kernel, you need its source code (btw, this applies to everything you want to compile).
 You can get the source code from the [kernel.org](https://kernel.org/) website. ;-)
 
-![](/images/2025/Linux-Kernels-Website.png)
+![](/images/2025/Linux-Kernels-Website.webp)
 
 You can simply download the **Latest Mainline Kernel**, which is always in the big **Yellow Button**!
 

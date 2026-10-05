@@ -18,10 +18,10 @@ languages:
         name: Blog
         url: /blog/
         weight: 10
-      - identifier: produkt
-        name: Produkt
-        url: /product/
-        weight: 20
+#     - identifier: produkt
+#       name: Produkt
+#       url: /product/
+#       weight: 20
       - identifier: tags
         name: Tags
         url: /tags/
@@ -36,10 +36,10 @@ languages:
         name: Blog
         url: /blog/
         weight: 10
-      - identifier: product
-        name: Product
-        url: /product/
-        weight: 20
+#      - identifier: product
+#       name: Product
+#       url: /product/
+#       weight: 20
       - identifier: tags
         name: Tags
         url: /tags/
@@ -54,15 +54,15 @@ languages:
           url: "https://www.youtube.com/@rockpat"
         - name: github
           url: "https://www.github.com/rockpat"
+        - name: instagram
+          url: "https://www.instagram.com/rockpat.jakub/"
         - name: twitter
           url: "https://twitter.com/rockpatyt"
-        - name: rss
-          url: "/feed"
 
 params:
   ShowPostNavLinks: true # Adds a Previous / Next post suggestion under a single post
   searchHidden: false
-  defaultTheme: auto #dark
+  defaultTheme: auto 
   #ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowToc: true
@@ -76,10 +76,10 @@ params:
         url: "https://www.youtube.com/@rockpat"
       - name: github
         url: "https://www.github.com/rockpat"
+      - name: instagram
+        url: "https://www.instagram.com/rockpat.jakub/"
       - name: twitter
         url: "https://twitter.com/rockpatyt"
-      - name: rss
-        url: "/feed"
 
   cover:
     linkFullImages: true
